@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/AslaugHogna/vef1-2020-v6#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "stylelint-config-sass-guidelines": "^7.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",
