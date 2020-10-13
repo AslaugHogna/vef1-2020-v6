@@ -1,1 +1,21 @@
 // Sækja allt úr styles/
+@import 'styles/config';
+@import 'styles/books';
+@import 'styles/events';
+@import 'styles/global';
+@import 'styles/grid';
+@import 'styles/header';
+
+/* Meginmál */
+
+main {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+}
+
+body {
+  font-size: default-size;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  color:$nero;
+}
+

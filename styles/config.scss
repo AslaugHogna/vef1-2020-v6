@@ -1,3 +1,35 @@
 // Hér eiga að vera stillingar með scss breytum fyrir:
 // grid, max-width á síðu, transitions,
 // liti, margin-bottom gildi sem eru sameiginleg
+$max-width: 1400px;
+$gutter: 20px;
+
+
+//colors:
+$nero: #222222;
+$black: #000000;
+$whisper: #eeeeee;
+$silver: #cccccc;
+$grey: #999999;
+$default-size: 16px;
+$margin1: $default-size;
+$margin2: $default-size * 2;
+
+//grid:
+
+
+@mixin row() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gutter / 2);
+  margin-right: -($gutter / 2);
+}
+
+@mixin columns($col:1) {
+  width: ($col / 12 * 100) * 1%;
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+
+}
+
+$trans: transform 300ms ease-in-out;
