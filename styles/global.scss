@@ -3,39 +3,38 @@
 // Allir stílar fyrir "global", þ.e.a.s. type selectorar, reset etc
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 a {
-  color:$nero;
+  color: $nero;
 }
 
 button {
-  background-color:$nero;
-  color: $whisper;
+  background-color: $nero;
   border: 1px solid $black;
   border-radius: 5px;
   padding: 0.5 * $default-size;
+  transition: background-color $trans, color $trans;
   word-break: initial;
-
-  transition:
-    color $trans,
-    background-color $trans;
 
   &:hover {
     background-color: $whisper;
-    color:$nero;
+    color: $nero;
   }
 
   &:active {
     background-color: $nero;
-    color: $whisper;
     border: 1px solid $black;
+    color: $whisper;
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Montaga', Georgia, serif;
 }

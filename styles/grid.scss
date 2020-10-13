@@ -2,8 +2,8 @@
 @import './config';
 
 .grid {
-  max-width: 1400px;
   margin: 0 auto;
+  max-width: 1400px;
   overflow: hidden;
 }
 
@@ -17,41 +17,41 @@
 
 // Hér skal nota scss @for til að ítra út klösum fyrir grid
 @for $i from 1 through 12 {
-  .col-#{$i}{
-    width: ((100 / 12) * $i)* 1%;
+  .col-#{$i} {
+    width: ((100 / 12) * $i) * 1%;
   }
 }
 
 @for $i from 1 through 3 {
-  .offset-col-#{$i}{
-    margin-left: ((100 / 12) * $i)* 1%;
+  .offset-col-#{$i} {
+    margin-left: ((100 / 12) * $i) * 1%;
   }
 }
 
 @media (max-width: 799px) {
   @for $i from 1 through 12 {
-    .col-md-#{$i}{
-      width: ((100 / 12) * $i)* 1%;
+    .col-md-#{$i} {
+      width: ((100 / 12) * $i) * 1%;
     }
   }
 
   @for $i from 1 through 3 {
-    .offset-col-md-#{$i}{
-      margin-left: ((100 / 12) * $i)* 1%;
+    .offset-col-md-#{$i} {
+      margin-left: ((100 / 12) * $i) * 1%;
     }
   }
 }
 
 @media (max-width: 499px) {
   @for $i from 1 through 12 {
-    .col-sm-#{$i}{
-      width: ((100 / 12) * $i)* 1%;
+    .col-sm-#{$i} {
+      width: ((100 / 12) * $i) * 1%;
     }
   }
 
   @for $i from 1 through 3 {
-    .offset-col-sm-#{$i}{
-      margin-left: ((100 / 12) * $i)* 1%;
+    .offset-col-sm-#{$i} {
+      margin-left: ((100 / 12) * $i) * 1%;
     }
   }
 }

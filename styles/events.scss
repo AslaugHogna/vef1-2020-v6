@@ -1,7 +1,6 @@
 // Sækja config
 @import './config';
 // Allir stílar fyrir events
-/* Events */
 
 .events {
   margin-bottom: $margin2;
@@ -12,16 +11,13 @@
 }
 
 .event {
-  position: relative;
-  
-  width: 100%;
+  background-color: $silver;
   height: 100%;
   min-height: 250px;
-
-  background-color: $silver;
-
+  position: relative;
+  width: 100%;
   word-break: break-word;
-  
+
   &:last-child {
     margin-right: 0;
   }
@@ -31,21 +27,21 @@
   }
 
   p {
-    margin-bottom: $margin1;
     font-style: italic;
+    margin-bottom: $margin1;
   }
 
   ul {
-    list-style: none;
     font-style: italic;
+    list-style: none;
   }
 
   .face {
+    backface-visibility: hidden;
+    height: 100%;
+    padding: 0.5 * $default-size;
     position: absolute;
     width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    padding: 0.5 * $default-size;
   }
 
   .face.back {
@@ -53,17 +49,19 @@
   }
 
   .back {
-    height: 100%;
-  
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-between;
   }
 
   .card {
-    position: absolute;
+    bottom: 0;
     display: flex;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     transform-style: preserve-3d;
     transition: $trans;
   }
@@ -77,8 +75,8 @@
   display: flex;
 
   h3 {
-    margin: auto;
     font-size: 2 * $default-size;
+    margin: auto;
     text-align: center;
   }
 }

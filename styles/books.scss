@@ -1,7 +1,6 @@
 // Sækja config
 @import './config';
 // Allir stílar fyrir bækur
-/* books */
 
 .books {
   margin-bottom: $margin1;
@@ -12,27 +11,23 @@
 }
 
 .book {
-  margin-right: $margin1;
-  margin-bottom: $margin2;
-  width: 100%;
-  height: 100%;
-  min-width: 160px;
-
+  background-color: $silver;
   display: flex;
   flex-direction: column;
-
-  background-color: $silver;
+  height: 100%;
+  margin-bottom: $margin2;
+  margin-right: $margin1;
+  min-width: 160px;
+  width: 100%;
 
   > .content {
-    padding: 0.5 * $default-size;
     border: 1px solid $grey;
     border-top: 0;
-    
-    flex: 1;
-  
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0.5 * $default-size;
   }
 
   &:hover .image img {
@@ -40,14 +35,14 @@
   }
 
   h3 {
-    margin-bottom: 0.5 * $margin1;
     font-size: 1.5 * $default-size;
+    margin-bottom: 0.5 * $margin1;
   }
-  
-   h4 {
-    margin-bottom: $margin1;
+
+  h4 {
     font-size: 0.875 * $default-size;
     font-weight: normal;
+    margin-bottom: $margin1;
     text-transform: uppercase;
   }
 }
@@ -55,22 +50,21 @@
 .book .image {
   height: 200px;
   overflow: hidden;
+
   img {
-    object-fit: cover;
-    width: 100%;
     height: 200px;
-  
+    object-fit: cover;
     transition: $trans;
+    width: 100%;
   }
 }
 
 .book .buy {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
-  .buy .price {
+  .price {
     margin-right: 0.5 * $margin1;
   }
-
 }
