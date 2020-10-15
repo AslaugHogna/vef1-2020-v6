@@ -1,3 +1,5 @@
+ATHS: Eitt atriði var skilið eftir úr stylelint, því að færa það til hefði brotið fyrirmælin um að ekki mætti nota 3rd level nesting.
+
 # Verkefni 6
 
 ## Lýsing
